@@ -11,7 +11,6 @@
     <!--Only for demo purpose - no need to add.  --->   
     <link rel="stylesheet" href="../static/css/page.css" /> 
 	    <link rel="stylesheet" href="css/style.css">
-    
 </head>
 <body>
 
@@ -32,19 +31,23 @@
                 <div class="Scriptcontent">  
                     <div class="student-profile">
                         <div class="card">
+                              
                             <div class="card-header  text-center">
-                                <img class="profile_img" src="../static/images/{{faceImage}}" alt="student dp">
-                                <h3>{{firtName}}  {{lastName}}</h3>
+                                
+                                <img class="profile_img" src="../static/images/{{data.faceImage}}" alt="student dp">
+                                <h3>{{data.firtName}} {{data.lastName}}</h3>
                             </div>
+                            
                             <div class="card-body">
-                                <p><strong> National Code:</strong> {{nationalCode}}</p>
-                                <p><strong>first name  :</strong> {{firtName}}  </p>
-                                <p><strong>last name: </strong> {{lastName}}</p>
-                                <p><strong>birth date  : </strong>{{birthDate}}</p>
-                                <p><strong>father's name :</strong> {{fathersName}}</p>
-                                <p><strong>expiration Date :</strong> {{expirationDate}}</p>
-                                <img src="../static/images/{{cardImage}}" style='float: right; position:absolute; left: 46%; top: 51%; border-radius: 10px; ' width="300" height="200" />
+                                <p><strong> National Code:</strong> {{data.nationalCode}}</p>
+                                <p><strong>first name  :</strong> {{data.firtName}}  </p>
+                                <p><strong>last name: </strong> {{data.lastName}}</p>
+                                <p><strong>birth date  : </strong>{{data.birthDate}}</p>
+                                <p><strong>father's name :</strong> {{data.fathersName}}</p>
+                                <p><strong>expiration Date :</strong> {{data.expirationDate}}</p>
+                                <img src="../static/images/{{data.cardImage}}" style='float: right; position:absolute; left: 46%; top: 51%; border-radius: 10px; ' width="300" height="200" />
                             </div>
+                            
                         </div>  
                     </div>
                 </div>
